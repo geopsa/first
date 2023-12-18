@@ -8,7 +8,10 @@ from django.http import HttpResponse
     
 
 def sait(request):
-    return render(request, template_name='base.html')
+    return render(request, template_name='base.html', )
 
 def main(request):
     return render(request, 'man/index.html')
+
+def about(request):
+    return render(request, 'man/about.html', {'title': 'About sait'})
